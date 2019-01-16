@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartD.Test", "Cart.Test\CartD.Test.csproj", "{8803A80A-0ABA-4A34-888C-7884C3F2EC91}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartD.Api", "CartD.Api\CartD.Api.csproj", "{4C7BD5B2-A9F2-46BF-A745-ACBA3A3CAAE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartD.Test", "CartD.Test\CartD.Test.csproj", "{1D1FB2D9-2921-4AA9-AE1D-394130DD7372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8803A80A-0ABA-4A34-888C-7884C3F2EC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8803A80A-0ABA-4A34-888C-7884C3F2EC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8803A80A-0ABA-4A34-888C-7884C3F2EC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8803A80A-0ABA-4A34-888C-7884C3F2EC91}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C7BD5B2-A9F2-46BF-A745-ACBA3A3CAAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C7BD5B2-A9F2-46BF-A745-ACBA3A3CAAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7BD5B2-A9F2-46BF-A745-ACBA3A3CAAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C7BD5B2-A9F2-46BF-A745-ACBA3A3CAAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1FB2D9-2921-4AA9-AE1D-394130DD7372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1FB2D9-2921-4AA9-AE1D-394130DD7372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1FB2D9-2921-4AA9-AE1D-394130DD7372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1FB2D9-2921-4AA9-AE1D-394130DD7372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
