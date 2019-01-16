@@ -32,14 +32,16 @@ namespace CartD.Api.Controllers
         [HttpPut(Name = "AddProductToCart")]
         public void Put([FromBody] AddProduct product)
         {
-            var prd = MyCart.Products.Where(x => x._id == product._id)?.FirstOrDefault();
+            var sysProduct = ProductController.MyProducts.Where(x => x._id == product._id).FirstOrDefault();
+
+            var prd = MyCart.Products.Where(x => x._id == sysProduct._id)?.FirstOrDefault();
             if (prd != null)
             {
                 prd.Quantity += product.Quantity;
             }
             else
             {
-                MyCart.Products.Add(product);
+                MyCart.Products.Add(new AddProduct { _id = sysProduct._id, Name = sysProduct.Name, Price = sysProduct.Price, Quantity = product.Quantity });
             }
         }
     }

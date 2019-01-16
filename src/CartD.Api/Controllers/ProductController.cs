@@ -19,15 +19,16 @@ namespace CartD.Api.Controllers
 
         // GET api/values
         [HttpGet(Name = "ListProducts")]
-        public ActionResult<IEnumerable<ProductBase>> Get()
+        public ActionResult<GetProductsResponse> Get()
         {
-            return MyProducts;
+            return new GetProductsResponse { Products = MyProducts };
         }
 
         // POST api/values
         [HttpPost(Name = "AddProduct")]
         public void Post([FromBody] ProductBase product)
         {
+            product._id = Guid.NewGuid().ToString();
             MyProducts.Add(product);
         }
     }

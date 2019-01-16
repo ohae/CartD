@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>บริหารสินค้า</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>ชื่อสินค้า</ion-label>
+    <ion-input type="name" [(ngModel)]="Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>ราคาต่อชิ้น </ion-label>
+    <ion-input type="name" [(ngModel)]="Price"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="AddProduct()">เพิ่มสินค้า</button>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let it of Products">
+      <ion-label>ชื่อสินค้า {{ it.name }} </ion-label>
+      <ion-label>ราคาต่อหน่วย {{ it.price }} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
